@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest index.js",
+    "test": "jest jest --watchAll",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index --ignore data.json"
   },
   "repository": {
     "type": "git",

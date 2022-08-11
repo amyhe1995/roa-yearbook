@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Amy",
+      "favouriteAnimal": "Dog",
+      "photo": "",
+      "blog": "https://amyhe1995.github.io/"
+    },
+    {
+      "id": 2,
+      "name": "Zin",
+      "favouriteAnimal": "Monkey",
+      "photo": "",
+      "blog": "https://ZinHoang.github.io/"
+    },
+    {
+      "id": 3,
+      "name": "Matt",
+      "favouriteAnimal": "Seal",
+      "photo": "",
+      "blog": "https://mattegan111.github.io/"
+    },
+    {
+      "id": 4,
+      "name": "Eamonn",
+      "favouriteAnimal": "Giraffe",
+      "photo": "",
+      "blog": "https://eamonn-osullivan-92.github.io/"
+    }
+  ]
+}
