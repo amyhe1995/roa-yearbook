@@ -5,28 +5,28 @@
       "name": "Amy",
       "favourite-animal": "Dog",
       "photo": "",
-      "blog": ""
+      "blog": "https://amyhe1995.github.io/"
     },
     {
       "id": 2,
       "name": "Zin",
       "favourite-animal": "Monkey",
       "photo": "",
-      "blog": ""
+      "blog": "https://ZinHoang.github.io/"
     },
     {
       "id": 3,
       "name": "Matt",
       "favourite-animal": "Seal",
       "photo": "",
-      "blog": ""
+      "blog": "https://mattegan111.github.io/"
     },
     {
       "id": 4,
       "name": "Eamonn",
       "favourite-animal": "Giraffe",
       "photo": "",
-      "blog": ""
+      "blog": "https://eamonn-osullivan-92.github.io/"
     }
   ]
 }
