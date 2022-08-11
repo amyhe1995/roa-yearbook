@@ -1,5 +1,9 @@
 <div class="container">
   {{#each students}}
-    <p>{{name}}</p>
+    <div class="student-list">
+      <a href="/students/{{id}}" alt="{{name}}">
+        <p>{{name}}</p>
+      </a>
+    </div>
   {{/each}}
 </div>
