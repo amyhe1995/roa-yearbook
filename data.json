@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Amy",
+      "favourite-animal": "Dog",
+      "photo": "",
+      "blog": ""
+    },
+    {
+      "id": 2,
+      "name": "Zin",
+      "favourite-animal": "Monkey",
+      "photo": "",
+      "blog": ""
+    },
+    {
+      "id": 3,
+      "name": "Matt",
+      "favourite-animal": "Seal",
+      "photo": "",
+      "blog": ""
+    },
+    {
+      "id": 4,
+      "name": "Eamonn",
+      "favourite-animal": "Giraffe",
+      "photo": "",
+      "blog": ""
+    }
+  ]
+}
