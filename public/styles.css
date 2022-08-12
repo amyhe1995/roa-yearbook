@@ -49,10 +49,16 @@ body {
 }
 
 .img-circle {
-  border-radius: 15px;
+
   object-fit: cover;
   width: 230px;
   height: 230px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .title {

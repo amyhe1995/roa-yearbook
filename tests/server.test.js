@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ * */
+
 const request = require('supertest')
 const server = require('../server')
 
@@ -64,7 +68,7 @@ describe('/students/edit', () => {
 		const expected = 200
 
 		return request(server)
-			.get('/students/edit')
+			.get('/students/1/edit')
 			.then((resp) => {
 				const actual = resp.status
 
@@ -74,7 +78,7 @@ describe('/students/edit', () => {
 
 	test('edit includes an input', () => {
 		return request(server)
-			.get('/students/edit')
+			.get('/students/1/edit')
 			.then((resp) => {
 				document.body.innerHTML = resp.text
 				const actual = document.querySelector('input')
