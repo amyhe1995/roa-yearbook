@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const fs = require('fs')
+const fetchGif = require('./utils')
 
 
 router.get("/students/add", (req,res)=> {
@@ -61,35 +62,32 @@ router.get('/students/:id/edit', (req,res) => {
   })
 })
 
-router.post('/students/:id/edit', (req,res) => {
+router.post('/students/:id/edit', async (req,res) => {
   const id = req.params.id
   const body = req.body
 
-  fs.readFile('./data.json', 'utf-8', (err,data) => {
+  fs.readFile('./data.json', 'utf-8', async (err,data) => {
     if (err) return res.status(500).send(err.message)
 
     const parsedData = JSON.parse(data)
-    
-        
-    parsedData.students.forEach(s => {
-      if (s.id == id) {
-        s.name = body.name
-        s.favouriteAnimal = body.favouriteAnimal
-        s.blog = body.blog
-      }    
-    })
 
+    const student = parsedData.students.find(s => s.id == id)
+
+    student.name = body.name
+    student.favouriteAnimal = body.favouriteAnimal
+    student.blog = body.blog
+    student.image = await fetchGif(body.favouriteAnimal)
 
     const studentsArr = JSON.stringify(parsedData)
-    // console.log(studentsArr)
 
-      fs.writeFile('./data.json', studentsArr, 'utf-8', (err) => {
-        if (err) throw err
+    fs.writeFile('./data.json', studentsArr, 'utf-8', (err) => {
+      if (err) throw err
       console.log('written succesfully')
       res.redirect('/students/' + id)
     })
   })
 })
+
 
 
 module.exports = router
