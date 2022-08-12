@@ -21,7 +21,9 @@ body {
   background-image: linear-gradient(to bottom right, #8E3200, #AB6131);
   /* background-color: var(--background); */
   font-family: 'madeMellow', arial;
-    height: 100vh;
+  min-height: 100vh;
+    height: 100%;
+padding-bottom: 3em;
 }
 
 .container {
@@ -67,6 +69,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1em;
 
 }
 
