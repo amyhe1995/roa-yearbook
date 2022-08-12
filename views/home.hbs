@@ -1,7 +1,7 @@
 <div class="container">
   {{#each students}}
     <div class="student-list">
-      <a href="/students/{{id}}" alt="{{name}}">
+      <a href="/students/{{id}}" alt="{{name}}" class="link">
         <p>{{name}}</p>
         <div class='img-circle'> 
         <img src="{{image}}">
@@ -10,3 +10,8 @@
     </div>
   {{/each}}
 </div>
+<div class="button-container">
+  <a href="/students/add">
+    <button class="btn">Add student</button>
+  </a>
+  </div>
