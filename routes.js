@@ -1,12 +1,11 @@
 const express = require('express')
 const router = express.Router()
 const fs = require('fs')
-const { _router } = require('./server')
 
 
 router.get("/students/add", (req,res)=> {
   fs.readFile('./data.json', 'utf-8', (err,data) => {
-    if (err) return res.status(500).send(err.message)
+    if (err) return res.status(500).send(err.message)   
     res.render('add', JSON.parse(data))    
   })  
 })
