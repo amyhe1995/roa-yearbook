@@ -14,16 +14,18 @@ router.get("/students/add", (req,res)=> {
 router.post("/students/add", (req,res)=>{
   const body = req.body
 
-  fs.readFile("./data.json","utf-8", (err,data)=> {
+  fs.readFile("./data.json","utf-8", async (err,data)=> {
     if (err) return  res.status(500).send(err.message)
     const parsedData = JSON.parse(data)
     const studentsArr = parsedData.students
     const idFrom = studentsArr.length
+    const gifURL = await fetchGif(body.favouriteAnimal)
     const obj = {
       id: idFrom + 1,
       name: body.name,
       favouriteAnimal: body.favouriteAnimal,
-      blog : body.blog
+      blog : body.blog,
+      image: gifURL
     }
 
     studentsArr.push(obj)
