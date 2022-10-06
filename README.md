@@ -1,5 +1,5 @@
 # roa-yearbook
-This is the my frist group projects during I did with my classmates at Dev Academy. and we also deploy into Heroku https://roayearbook.herokuapp.com/
+This is the my frist group projects I did with my classmates at Dev Academy. and we also deploy into Heroku https://roayearbook.herokuapp.com/
 
 In this project, you can create your own profile by adding your favourite animal and your blog's link.
 
